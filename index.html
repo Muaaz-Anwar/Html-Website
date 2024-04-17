@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muzis - Home Page Html Website Design </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="assets/images/social icons/facobook.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- offpage navbar start  -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title mt-2 ms-auto me-auto" id="offcanvasRightLabel"><a class="navbar-brand"
+          href="#">Muz<span>Is.</span></a></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mt-3 mb-lg-0 nav_bottom">
+          <li class="nav-item">
+            <a class="nav-link p-2 active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#about-us"><i class="fa-solid fa-circle-info"></i> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#service"><i class="fa-solid fa-briefcase"></i> Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="wave.html"><i class="fa-solid fa-briefcase"></i> Wave</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="./contact-us.html"><i class="fa-solid fa-address-book"></i> Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav social-icon-offcanvas mt-3 w-100">
+          <li class="nav-item">
+            <a class="nav-link p-1" aria-current="page" href="#"><img src="assets/images/social icons/facobook.png"
+                class="img-fluid" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-1" aria-current="page" href="#"><img src="assets/images/social icons/twitter.png"
+                class="img-fluid" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-1" aria-current="page" href="#"><img src="assets/images/social icons/instagram.png"
+                class="img-fluid" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="offcanvas-footer text-center mb-2">
+      <div>Muaaz Anwar</div>
+      <span>All Rights Reserved &#169<span>2024</span></span>
+    </div>
+  </div>
+  <!-- offpage navbar start  -->
+
+  <div class="container-fluid" id="home">
+        <!-- loader start  -->
+        <div class="box" id="box">
+          <div class="loader">
+          </div>
+        </div>
+        <!-- loader end  -->
+    <!-- Navbar start  -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-sticky top-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Muz<span>Is.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav_bottom">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wave.html">Wave</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-icon ms-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32H360V134.1l23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23V32H120.1C111 12.8 91.6 0 69.5 0H24zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z" />
+                </svg>
+                <span class="badge badge-warning">1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end  -->
+
+    
+    <!-- main section start  -->
+    <div class="contianer-fluid home-section">
+      <div class="wave">
+        <svg width="100%" height="100%" viewBox="0 0 1282 150">
+          <style>
+            .path-0 {
+              animation: pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+
+            @keyframes pathAnim-0 {
+              0% {
+                d: path("M 0,500 L 0,93 C 27.83596216766567,86.42890023272741 55.67192433533134,79.85780046545483 84,94 C 112.32807566466866,108.14219953454517 141.14826482634035,142.99769837090813 166,136 C 190.85173517365965,129.00230162909187 211.73501635930734,80.15140605091271 245,78 C 278.26498364069266,75.84859394908729 323.9116697364302,120.39667742544097 352,140 C 380.0883302635698,159.60332257455903 390.61830469497187,154.2618842473233 413,137 C 435.38169530502813,119.73811575267669 469.6151114836821,90.55578558526572 498,86 C 526.3848885163179,81.44421441473428 548.9212493702996,101.51497341161375 582,104 C 615.0787506297004,106.48502658838625 658.6998910351193,91.3843207682793 692,89 C 725.3001089648807,86.6156792317207 748.2791864892228,96.94774351526911 769,101 C 789.7208135107772,105.05225648473089 808.1833630079897,102.82470517064426 835,110 C 861.8166369920103,117.17529482935574 896.987361478819,133.75343580215383 924,135 C 951.012638521181,136.24656419784617 969.8671910767341,122.16155162074044 1002,102 C 1034.1328089232659,81.83844837925956 1079.543874214245,55.600357714884474 1107,50 C 1134.456125785755,44.399642285115526 1143.9573120662849,59.43701751972168 1173,58 C 1202.0426879337151,56.56298248027832 1250.6268775206156,38.65157220622878 1285,55 C 1319.3731224793844,71.34842779377122 1339.5351778512525,121.95669365536321 1363,134 C 1386.4648221487475,146.0433063446368 1413.2324110743739,119.5216531723184 1440,93 L 1440,500 L 0,500 Z");
+              }
+
+              25% {
+                d: path("M 0,500 L 0,93 C 29.55143285423531,79.89310863936346 59.10286570847062,66.78621727872692 91,72 C 122.89713429152938,77.21378272127308 157.13997002035288,100.74823952445574 182,101 C 206.86002997964712,101.25176047554426 222.33725421011786,78.22082462345008 247,65 C 271.66274578988214,51.77917537654992 305.5110131391757,48.368461981743934 334,68 C 362.4889868608243,87.63153801825607 385.6186932331794,130.3053274495742 411,135 C 436.3813067668206,139.6946725504258 464.0142139281071,106.41022821995928 495,105 C 525.9857860718929,103.58977178004072 560.3244510543922,134.05375967058865 589,124 C 617.6755489456078,113.94624032941134 640.6879818543241,63.37473309768605 669,67 C 697.3120181456759,70.62526690231395 730.9236215283112,128.44730793866717 763,131 C 795.0763784716888,133.55269206133283 825.617532032431,80.83603514764522 855,76 C 884.382467967569,71.16396485235478 912.6062503419646,114.20855147075193 940,124 C 967.3937496580354,133.79144852924807 993.9574665997104,110.32975896934701 1023,95 C 1052.0425334002896,79.67024103065299 1083.5638832591935,72.47241265186005 1110,68 C 1136.4361167408065,63.52758734813994 1157.787000363515,61.78059042321276 1183,73 C 1208.212999636485,84.21940957678724 1237.2881152867458,108.40522565528886 1267,116 C 1296.7118847132542,123.59477434471114 1327.0605384895011,114.59850695563175 1356,108 C 1384.9394615104989,101.40149304436825 1412.4697307552494,97.20074652218412 1440,93 L 1440,500 L 0,500 Z");
+              }
+
+              50% {
+                d: path("M 0,500 L 0,93 C 24.954720705533724,70.79317341019305 49.90944141106745,48.58634682038609 81,47 C 112.09055858893255,45.41365317961391 149.31695506126394,64.44778612864869 179,76 C 208.68304493873606,87.55221387135131 230.82273834387684,91.62250866501923 255,99 C 279.17726165612316,106.37749133498077 305.3920915632286,117.06217921127437 338,120 C 370.6079084367714,122.93782078872563 409.608895403209,118.12877448988334 436,106 C 462.391104596791,93.87122551011666 476.1723268239358,74.42272282919228 499,75 C 521.8276731760642,75.57727717080772 553.7017973010475,96.18033419334755 582,98 C 610.2982026989525,99.81966580665245 635.0204839718743,82.85594039741756 663,76 C 690.9795160281257,69.14405960258244 722.2162668114551,72.39590421698223 751,76 C 779.7837331885449,79.60409578301777 806.1144487823055,83.56044273465353 839,76 C 871.8855512176945,68.43955726534647 911.3259380593227,49.36232484440363 942,64 C 972.6740619406773,78.63767515559637 994.5817989804036,126.99025788773197 1016,126 C 1037.4182010195964,125.00974211226803 1058.346866019063,74.67664360466851 1086,63 C 1113.653133980937,51.32335639533149 1148.030736943344,78.303167693594 1177,98 C 1205.969263056656,117.696832306406 1229.5301862075612,130.11068562095545 1259,115 C 1288.4698137924388,99.88931437904454 1323.848518226411,57.254089822584156 1355,49 C 1386.151481773589,40.745910177415844 1413.0757408867944,66.87295508870793 1440,93 L 1440,500 L 0,500 Z");
+              }
+
+              75% {
+                d: path("M 0,500 L 0,93 C 35.1086838128453,91.29158080423218 70.2173676256906,89.58316160846435 93,81 C 115.7826323743094,72.41683839153565 126.2392133100829,56.95893437037475 154,65 C 181.7607866899171,73.04106562962525 226.82577913397785,104.58110091003665 260,102 C 293.17422086602215,99.41889908996335 314.4576701540056,62.71666198947867 335,63 C 355.5423298459944,63.28333801052133 375.34354024999976,100.5522511320487 409,113 C 442.65645975000024,125.4477488679513 490.1681688459952,113.07433348232654 521,105 C 551.8318311540048,96.92566651767346 565.9837843660194,93.15041493864517 588,97 C 610.0162156339806,100.84958506135483 639.8966936899271,112.32400676309283 672,122 C 704.1033063100729,131.67599323690717 738.4294408742721,139.5535580089836 770,129 C 801.5705591257279,118.44644199101639 830.385542812984,89.46176120097276 855,93 C 879.614457187016,96.53823879902724 900.0283878737916,132.5993971871253 926,132 C 951.9716121262084,131.4006028128747 983.5009056918489,94.14065005052602 1009,72 C 1034.4990943081511,49.85934994947398 1053.9679893588138,42.83800261077066 1088,56 C 1122.0320106411862,69.16199738922934 1170.6271368728953,102.50733950639136 1199,104 C 1227.3728631271047,105.49266049360864 1235.523463149605,75.13263936366387 1258,77 C 1280.476536850395,78.86736063633613 1317.2790105286842,112.96210303895316 1350,121 C 1382.7209894713158,129.03789696104684 1411.360494735658,111.01894848052342 1440,93 L 1440,500 L 0,500 Z");
+              }
+
+              100% {
+                d: path("M 0,500 L 0,93 C 27.83596216766567,86.42890023272741 55.67192433533134,79.85780046545483 84,94 C 112.32807566466866,108.14219953454517 141.14826482634035,142.99769837090813 166,136 C 190.85173517365965,129.00230162909187 211.73501635930734,80.15140605091271 245,78 C 278.26498364069266,75.84859394908729 323.9116697364302,120.39667742544097 352,140 C 380.0883302635698,159.60332257455903 390.61830469497187,154.2618842473233 413,137 C 435.38169530502813,119.73811575267669 469.6151114836821,90.55578558526572 498,86 C 526.3848885163179,81.44421441473428 548.9212493702996,101.51497341161375 582,104 C 615.0787506297004,106.48502658838625 658.6998910351193,91.3843207682793 692,89 C 725.3001089648807,86.6156792317207 748.2791864892228,96.94774351526911 769,101 C 789.7208135107772,105.05225648473089 808.1833630079897,102.82470517064426 835,110 C 861.8166369920103,117.17529482935574 896.987361478819,133.75343580215383 924,135 C 951.012638521181,136.24656419784617 969.8671910767341,122.16155162074044 1002,102 C 1034.1328089232659,81.83844837925956 1079.543874214245,55.600357714884474 1107,50 C 1134.456125785755,44.399642285115526 1143.9573120662849,59.43701751972168 1173,58 C 1202.0426879337151,56.56298248027832 1250.6268775206156,38.65157220622878 1285,55 C 1319.3731224793844,71.34842779377122 1339.5351778512525,121.95669365536321 1363,134 C 1386.4648221487475,146.0433063446368 1413.2324110743739,119.5216531723184 1440,93 L 1440,500 L 0,500 Z");
+              }
+            }
+          </style>
+          <path
+            d="M 0,500 L 0,93 C 27.83596216766567,86.42890023272741 55.67192433533134,79.85780046545483 84,94 C 112.32807566466866,108.14219953454517 141.14826482634035,142.99769837090813 166,136 C 190.85173517365965,129.00230162909187 211.73501635930734,80.15140605091271 245,78 C 278.26498364069266,75.84859394908729 323.9116697364302,120.39667742544097 352,140 C 380.0883302635698,159.60332257455903 390.61830469497187,154.2618842473233 413,137 C 435.38169530502813,119.73811575267669 469.6151114836821,90.55578558526572 498,86 C 526.3848885163179,81.44421441473428 548.9212493702996,101.51497341161375 582,104 C 615.0787506297004,106.48502658838625 658.6998910351193,91.3843207682793 692,89 C 725.3001089648807,86.6156792317207 748.2791864892228,96.94774351526911 769,101 C 789.7208135107772,105.05225648473089 808.1833630079897,102.82470517064426 835,110 C 861.8166369920103,117.17529482935574 896.987361478819,133.75343580215383 924,135 C 951.012638521181,136.24656419784617 969.8671910767341,122.16155162074044 1002,102 C 1034.1328089232659,81.83844837925956 1079.543874214245,55.600357714884474 1107,50 C 1134.456125785755,44.399642285115526 1143.9573120662849,59.43701751972168 1173,58 C 1202.0426879337151,56.56298248027832 1250.6268775206156,38.65157220622878 1285,55 C 1319.3731224793844,71.34842779377122 1339.5351778512525,121.95669365536321 1363,134 C 1386.4648221487475,146.0433063446368 1413.2324110743739,119.5216531723184 1440,93 L 1440,500 L 0,500 Z"
+            fill="#fff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        </svg>
+      </div>
+      <!-- main left text start  -->
+      <div class="col-sm-12 col-md-6 col-lg-6 text-light home-text-section">
+        <h2>Modern Interior Design Studio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil pariatur veritatis, officiis ex fugiat nulla
+          quae quo quis soluta tempora esse temporibus vero asperiores officia, aliquam culpa aut eos at.</p>
+        <div class="btn">
+          <button type="button" class="btn btn-primary">Shop Now</button>
+          <button type="button" class="btn btn-warning">Explore</button>
+        </div>
+      </div>
+
+      <!-- main left text end  -->
+
+      <!-- main right background start  -->
+      <div class="col-md-6 col-lg-6">
+        <div class="image">
+          <img src="./assets/images/home/sofa.png" class="img-fluid w-100" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- main right background end  -->
+    <!-- main section end  -->
+
+    <!-- second card section start  -->
+    <div class="container card-container">
+      <div class="row card-row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card main-card">
+            <div class="card-body">
+              <h1 class="card-title">Crafted With Excellent Material.</h1>
+              <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quibusdam
+                ratione
+                dolorem eius harum incidunt asperiores, eveniet porro corrupti culpa, modi iusto! Cum.</p>
+              <a href="#" class="btn btn-dark mt-3">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card img-card">
+            <img src="assets/images/card/1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title product-name" style="z-index: 99 !important;">Nordic Chair</h5>
+              <p class="card-text product-price">$50.00</p>
+              <a href="#" class="btn btn-add"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card img-card">
+            <img src="assets/images/card/2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title product-name" style="z-index: 99 !important;">Nordic Chair</h5>
+              <p class="card-text product-price">$50.00</p>
+              <a href="#" class="btn btn-add"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card img-card">
+            <img src="assets/images/card/3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title product-name" style="z-index: 99 !important;">Nordic Chair</h5>
+              <p class="card-text product-price">$50.00</p>
+              <a href="#" class="btn btn-add"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- second card section end  -->
+    <div class="container choose-section" id="service">
+      <div class="row">
+        <!-- left text section start -->
+        <div class="col-md-6 col-lg-6 col-sm-12 text-section">
+          <div class="row">
+            <div class="why-choose-us">
+              <h1>Why Choose Us</h1>
+              <p class="why-choose-us-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                repudiandae deserunt placeat non tempore dolore, voluptatem, deleniti laboriosam perferendis!</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-4">
+              <div class="choose-us-icon">
+                <i class="fa-solid fa-truck"></i>
+              </div>
+              <div class="choose-us-text mt-3 mb-1">
+                <h5>Fast and Free Shipping</h5>
+              </div>
+              <div class="choose-us-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius qui facere sint laboriosam illo
+                ipsum laudantium.
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-4">
+              <div class="choose-us-icon">
+                <i class="fa-solid fa-shop"></i>
+              </div>
+              <div class="choose-us-text mt-3 mb-1">
+                <h5>Easy Shopping</h5>
+              </div>
+              <div class="choose-us-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius qui facere sint laboriosam illo
+                ipsum laudantium.
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-4">
+              <div class="choose-us-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="choose-us-text mt-3 mb-1">
+                <h5>24/7 Customer Support</h5>
+              </div>
+              <div class="choose-us-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius qui facere sint laboriosam illo
+                ipsum laudantium.
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-4">
+              <div class="choose-us-icon">
+                <i class="fa-solid fa-right-left"></i>
+              </div>
+              <div class="choose-us-text mt-3 mb-1">
+                <h5>Free Returns </h5>
+              </div>
+              <div class="choose-us-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius qui facere sint laboriosam illo
+                ipsum laudantium.
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- right end section start -->
+        <div class="col-md-6 col-lg-6 col-sm-12 img-section">
+          <img src="assets/images/home/choose-us-pic.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="assets/images/social icons/facobook.png" style="height: 28px;" class="rounded me-2" alt="...">
+          <strong class="me-auto">MuzIs - Welcome !</strong>
+          <small>few seconds ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello dear user! You have got a new surprise.
+        </div>
+      </div>
+    </div>
+    <!-- parallax section start -->
+    <div class="container-fluid parallax-section w-100" id="about">
+      <div class="row">
+        <div class="col-12 p-0">
+          <h1>E-commerce Store <br> Website</h1>
+        </div>
+      </div>
+    </div>
+    <!-- parallax section end -->
+
+
+    <!-- about section start -->
+    <div class="container about-section mb-5" id="about-us">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-auto mb-auto">
+          <div class="row">
+            <div class="col-sm-7 col-md-7 col-lg-8 about-img">
+              <img src="assets/images/home/about-img.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-4 about-img-second pt-2 pt-md-0 ps-sm-2">
+              <img src="assets/images/home/about-img-3.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 about-text-section">
+          <div class="row">
+            <div class="why-about-us">
+              <h1 class="mb-3">We Help You Make Modern Interior Deisgns</h1>
+              <p class="why-about-us-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                repudiandae deserunt placeat non tempore dolore, voluptatem, deleniti laboriosam perferendis!</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+              <div class="about-us-detail">
+                <div class="me-3"><i class="fa-solid fa-circle-dot"></i></div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+              <div class="about-us-detail">
+                <div class="me-3"><i class="fa-solid fa-circle-dot"></i></div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-4">
+              <div class="about-us-detail">
+                <div class="me-3"><i class="fa-solid fa-circle-dot"></i></div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-4">
+              <div class="about-us-detail">
+                <div class="me-3"><i class="fa-solid fa-circle-dot"></i></div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+              </div>
+            </div>
+            <div class="about-btn mt-5 ms-2">
+              <a href="" class="btn btn-dark">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about section end -->
+
+    <!-- footer section start  -->
+    <div class="footer-section section">
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+      <div class="container-fluid">
+
+        <footer class="text-white text-center text-lg-start footer-dark">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">About company</h5>
+
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  voluptatum deleniti atque corrupti.
+                </p>
+
+                <p>
+                  Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias.
+                </p>
+
+                <div class="mt-4 mb-4">
+                  <!-- Facebook -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                  <!-- Google + -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                  <!-- Linkedin -->
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                  <label class="form-label" for="formControlLg">Search</label>
+                </div>
+
+                <ul class="fa-ul" style="margin-left: 1.65em;">
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Warsaw, 00-967,
+                      Poland</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                      class="ms-2">contact@example.com</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234 567 88</span>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                <table class="table text-center text-white">
+                  <tbody class="fw-normal">
+                    <tr>
+                      <td>Mon - Thu:</td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Fri - Sat:</td>
+                      <td>8am - 1am</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday:</td>
+                      <td>9am - 10pm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MuzIs.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+      </div>
+      <!-- End of .container -->
+    </div>
+    <!-- footer section end  -->
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(".nav-link").on('click', function () {
+      $('.nav-link').removeClass('active');
+      $(this).addClass("active");
+      $('.nav-link').children('svg').children('path').css('fill', 'rgb(225, 225, 225)');
+      $(this).children('svg').children('path').css('fill', '#ecbd00');
+    })
+    window.addEventListener("load", () => {
+      const toastLiveExample = document.getElementById('liveToast');
+      const toast = new bootstrap.Toast(toastLiveExample);
+      let box = document.getElementById("box");
+
+      setTimeout(() => {
+        box.style.display = "none";
+      }, 1000);
+      setTimeout(() => {
+
+        toast.show();
+      }, 8000);
+    })
+
+  </script>
+</body>
+
+</html>
